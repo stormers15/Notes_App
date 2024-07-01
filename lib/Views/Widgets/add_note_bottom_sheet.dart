@@ -20,34 +20,36 @@ class _AddNoteBottomSheetState extends State<AddNoteBottomSheet> {
   Widget build(BuildContext context) {
     return Form(
       key: formkey,
-      child: Column(
-        children: [
-          const SizedBox(height: 30),
-          CustomTextField(
-              hint: "Title",
-              onSaved: (value) {
-                title = value;
-              }),
-          const SizedBox(height: 10),
-          CustomTextField(
-              hint: "content",
-              maxLines: 2,
-              onSaved: (value) {
-                subTitle = value;
-              }),
-          const SizedBox(height: 20),
-          CustomButton(
-            onTap: () {
-              if (formkey.currentState!.validate()) {
-                formkey.currentState!.save();
-              } else {
-                autovalidateMode = AutovalidateMode.always;
-                setState(() {});
-              }
-            },
-          ),
-          const SizedBox(height: 10),
-        ],
+      child: Padding(
+        padding: const EdgeInsets.only(top: 10.0, left: 10, right: 10),
+        child: Column(
+          children: [
+            const SizedBox(height: 20),
+            CustomTextField(
+                hint: "Title",
+                onSaved: (value) {
+                  title = value;
+                }),
+            const SizedBox(height: 20),
+            CustomTextField(
+                hint: "content",
+                maxLines: 2,
+                onSaved: (value) {
+                  subTitle = value;
+                }),
+            const SizedBox(height: 30),
+            CustomButton(
+              onTap: () {
+                if (formkey.currentState!.validate()) {
+                  formkey.currentState!.save();
+                } else {
+                  autovalidateMode = AutovalidateMode.always;
+                  setState(() {});
+                }
+              },
+            ),
+          ],
+        ),
       ),
     );
   }

@@ -23,6 +23,7 @@ class CustomTextField extends StatelessWidget {
       style: const TextStyle(fontSize: 20),
       cursorColor: kprimarycolor,
       maxLines: maxLines,
+      
       decoration: InputDecoration(
         hintText: hint,
         hintStyle: const TextStyle(
@@ -36,7 +37,7 @@ class CustomTextField extends StatelessWidget {
 
   OutlineInputBorder buildBorder([color]) {
     return OutlineInputBorder(
-        borderRadius: BorderRadius.circular(8),
-        borderSide: BorderSide(color: color ?? Colors.white24));
+        borderRadius: BorderRadius.circular(16),
+        borderSide: BorderSide(color: color ?? Colors.white30));
   }
 }
