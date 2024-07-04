@@ -14,7 +14,7 @@ class AddNotesCubit extends Cubit<AddNotesState> {
       await notesbox.add(note);
       emit(AddNotesSuccess());
     } catch (e) {
-      emit(AddNotesFailure(errMessage: ""));
+      emit(AddNotesFailure(errMessage: "Yakub Kamr Eldeen Debeathe"));
     }
   }
 }

@@ -27,7 +27,7 @@ class CustomTextField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: hint,
         hintStyle: const TextStyle(
-            color: Color.fromRGBO(2, 225, 255, 1), fontSize: 25),
+            color: Color.fromRGBO(1, 4, 5, 1), fontSize: 25),
         border: buildBorder(),
         enabledBorder: buildBorder(),
         focusedBorder: buildBorder(kprimarycolor),
