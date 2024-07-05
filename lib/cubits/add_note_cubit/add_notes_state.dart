@@ -6,10 +6,14 @@ class AddNotesInitial extends AddNotesState {}
 
 class AddNotesLoading extends AddNotesState {}
 
-class AddNotesSuccess extends AddNotesState {}
+class AddNotesSuccess extends AddNotesState {
+  final List<NoteModel> notes;
+
+  AddNotesSuccess(this.notes);
+}
 
 class AddNotesFailure extends AddNotesState {
   final String errMessage;
 
-  AddNotesFailure({required this.errMessage});
+  AddNotesFailure(this.errMessage);
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:notes_app/Models/note_model.dart';
 import 'package:notes_app/Views/Widgets/custom_text_field.dart';
-import 'package:notes_app/cubits/add_notes_cubit.dart';
+import 'package:notes_app/cubits/add_note_cubit/add_notes_cubit.dart';
 import 'custom_button.dart';
 
 class AddNoteForm extends StatefulWidget {

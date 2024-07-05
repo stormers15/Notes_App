@@ -1,6 +1,5 @@
-import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-
+import 'package:bloc/bloc.dart';
 class SimpleBlocObserver implements BlocObserver {
   @override
   void onChange(BlocBase bloc, Change change) {
